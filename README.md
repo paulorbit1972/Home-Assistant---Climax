@@ -28,6 +28,9 @@ Climax is een zelfstandig Home Assistant-project voor zoneregeling en het stapsg
 - **Regelwens:** als slaapkamer(s) CV-warmte vragen, wordt de vloerverwarmingspomp geblokkeerd, zelfs als de woonkamer ook warmte vraagt. Geen poging tot volledige hydraulische afsluiting.
 - De CV-ketel moet op termijn op gezamenlijke zonevraag kunnen reageren; onafhankelijke ketelwarmtevraag via de root-API is **nog niet aangetoond**.
 
+## Eerste concrete ontwikkelrichting
+- **[HA-zones met Toon 2 en lokale failsafe](docs/ONTWIKKELRICHTING_01_HA_ZONES_TOON.md):** HA beheert zones, Toon blijft de autonome woonkamer-/OpenTherm-thermostaat; externe warmtevraag moet met een Toon-zijdige watchdog automatisch vervallen wanneer HA wegvalt. Dit is gekozen als eerste ontwikkelrichting, **niet geïmplementeerd**.
+
 ## Documenten
 - [WERKINSTRUCTIE](docs/WERKINSTRUCTIE.md) — proces, werkwijze en acceptatie
 - [SAD](docs/SAD.md) — feitelijke installatie, grenzen en risico's
